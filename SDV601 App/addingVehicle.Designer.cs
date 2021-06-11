@@ -29,45 +29,56 @@ namespace SDV601_App
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.carRegoTxt = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.submitCarRegoBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox2
+            // carRegoTxt
             // 
-            this.textBox2.Location = new System.Drawing.Point(414, 109);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(240, 22);
-            this.textBox2.TabIndex = 1;
-            // 
-            // textBox3
-            // 
-            this.textBox3.AccessibleName = "addVehicleDisplayTxt";
-            this.textBox3.Location = new System.Drawing.Point(297, 49);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(241, 22);
-            this.textBox3.TabIndex = 2;
-            this.textBox3.Text = "Add/Edit a vehicle entry";
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.carRegoTxt.Location = new System.Drawing.Point(414, 191);
+            this.carRegoTxt.Name = "carRegoTxt";
+            this.carRegoTxt.Size = new System.Drawing.Size(240, 22);
+            this.carRegoTxt.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(176, 112);
+            this.label1.Location = new System.Drawing.Point(176, 194);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(215, 17);
             this.label1.TabIndex = 3;
             this.label1.Text = "Please enter the car registration:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(300, 65);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(280, 29);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Add/Edit a vehicle entry";
+            // 
+            // submitCarRegoBtn
+            // 
+            this.submitCarRegoBtn.Location = new System.Drawing.Point(330, 323);
+            this.submitCarRegoBtn.Name = "submitCarRegoBtn";
+            this.submitCarRegoBtn.Size = new System.Drawing.Size(225, 63);
+            this.submitCarRegoBtn.TabIndex = 5;
+            this.submitCarRegoBtn.Text = "Enter remaining details";
+            this.submitCarRegoBtn.UseVisualStyleBackColor = true;
             // 
             // addingVehicle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(877, 482);
+            this.Controls.Add(this.submitCarRegoBtn);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.carRegoTxt);
             this.Name = "addingVehicle";
             this.Text = "addingVehicle";
             this.ResumeLayout(false);
@@ -76,8 +87,9 @@ namespace SDV601_App
         }
 
         #endregion
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox carRegoTxt;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button submitCarRegoBtn;
     }
 }

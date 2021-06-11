@@ -50,5 +50,10 @@ namespace SDV601_App
             var f1 = new addingVehicle();
             f1.ShowDialog();
         }
+
+        private void vehicleExtendRichTxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

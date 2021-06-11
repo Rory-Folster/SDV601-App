@@ -16,5 +16,10 @@ namespace SDV601_App
         {
             InitializeComponent();
         }
+
+        private void addingVehicleExtend_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

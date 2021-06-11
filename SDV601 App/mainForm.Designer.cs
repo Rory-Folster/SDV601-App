@@ -29,105 +29,96 @@ namespace SDV601_App
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.listBox3 = new System.Windows.Forms.ListBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.addEditBtn = new System.Windows.Forms.Button();
+            this.cashFlowTxt = new System.Windows.Forms.TextBox();
+            this.vehicleListBox1 = new System.Windows.Forms.ListBox();
+            this.vehicleListBox2 = new System.Windows.Forms.ListBox();
+            this.vehicleListBox3 = new System.Windows.Forms.ListBox();
+            this.vehicleExtendRichTxt = new System.Windows.Forms.RichTextBox();
+            this.vehicleExtendExitBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // addEditBtn
             // 
-            this.button1.AccessibleName = "addEditBtn";
-            this.button1.Location = new System.Drawing.Point(659, 49);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(237, 72);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Add/Edit Vehicle";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.addEditBtn.AccessibleName = "addEditBtn";
+            this.addEditBtn.Location = new System.Drawing.Point(659, 49);
+            this.addEditBtn.Name = "addEditBtn";
+            this.addEditBtn.Size = new System.Drawing.Size(237, 72);
+            this.addEditBtn.TabIndex = 1;
+            this.addEditBtn.Text = "Add/Edit Vehicle";
+            this.addEditBtn.UseVisualStyleBackColor = true;
+            this.addEditBtn.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox2
+            // cashFlowTxt
             // 
-            this.textBox2.AccessibleName = "totalCashFlowTxtBox";
-            this.textBox2.Location = new System.Drawing.Point(111, 463);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(744, 22);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.Text = "Total Cash Flow:   $230,987.93";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.cashFlowTxt.AccessibleName = "totalCashFlowTxtBox";
+            this.cashFlowTxt.Location = new System.Drawing.Point(111, 463);
+            this.cashFlowTxt.Name = "cashFlowTxt";
+            this.cashFlowTxt.Size = new System.Drawing.Size(744, 22);
+            this.cashFlowTxt.TabIndex = 2;
+            this.cashFlowTxt.Text = "Total Cash Flow:   $230,987.93";
+            this.cashFlowTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // listBox1
+            // vehicleListBox1
             // 
-            this.listBox1.AccessibleName = "mainListBox1";
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Items.AddRange(new object[] {
+            this.vehicleListBox1.AccessibleName = "mainListBox1";
+            this.vehicleListBox1.FormattingEnabled = true;
+            this.vehicleListBox1.ItemHeight = 16;
+            this.vehicleListBox1.Items.AddRange(new object[] {
             "FHS134"});
-            this.listBox1.Location = new System.Drawing.Point(80, 170);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(225, 84);
-            this.listBox1.TabIndex = 3;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged_1);
+            this.vehicleListBox1.Location = new System.Drawing.Point(80, 170);
+            this.vehicleListBox1.Name = "vehicleListBox1";
+            this.vehicleListBox1.Size = new System.Drawing.Size(225, 84);
+            this.vehicleListBox1.TabIndex = 3;
+            this.vehicleListBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged_1);
             // 
-            // textBox3
+            // vehicleListBox2
             // 
-            this.textBox3.AccessibleName = "logTxtBox";
-            this.textBox3.Location = new System.Drawing.Point(80, 149);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(225, 22);
-            this.textBox3.TabIndex = 4;
-            this.textBox3.Text = "List of current vehicles";
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // listBox2
-            // 
-            this.listBox2.AccessibleName = "mainListBox2";
-            this.listBox2.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 16;
-            this.listBox2.Items.AddRange(new object[] {
+            this.vehicleListBox2.AccessibleName = "mainListBox2";
+            this.vehicleListBox2.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.vehicleListBox2.FormattingEnabled = true;
+            this.vehicleListBox2.ItemHeight = 16;
+            this.vehicleListBox2.Items.AddRange(new object[] {
             "YSL154"});
-            this.listBox2.Location = new System.Drawing.Point(80, 253);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(225, 84);
-            this.listBox2.TabIndex = 5;
-            this.listBox2.Click += new System.EventHandler(this.listBox2_Click);
+            this.vehicleListBox2.Location = new System.Drawing.Point(80, 253);
+            this.vehicleListBox2.Name = "vehicleListBox2";
+            this.vehicleListBox2.Size = new System.Drawing.Size(225, 84);
+            this.vehicleListBox2.TabIndex = 5;
+            this.vehicleListBox2.Click += new System.EventHandler(this.listBox2_Click);
             // 
-            // listBox3
+            // vehicleListBox3
             // 
-            this.listBox3.AccessibleName = "mainListBox3";
-            this.listBox3.FormattingEnabled = true;
-            this.listBox3.ItemHeight = 16;
-            this.listBox3.Items.AddRange(new object[] {
+            this.vehicleListBox3.AccessibleName = "mainListBox3";
+            this.vehicleListBox3.FormattingEnabled = true;
+            this.vehicleListBox3.ItemHeight = 16;
+            this.vehicleListBox3.Items.AddRange(new object[] {
             "SHR639"});
-            this.listBox3.Location = new System.Drawing.Point(80, 336);
-            this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(225, 84);
-            this.listBox3.TabIndex = 6;
+            this.vehicleListBox3.Location = new System.Drawing.Point(80, 336);
+            this.vehicleListBox3.Name = "vehicleListBox3";
+            this.vehicleListBox3.Size = new System.Drawing.Size(225, 84);
+            this.vehicleListBox3.TabIndex = 6;
             // 
-            // richTextBox1
+            // vehicleExtendRichTxt
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(425, 165);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(489, 254);
-            this.richTextBox1.TabIndex = 7;
-            this.richTextBox1.Text = "Mazda \n2\n2020\n$13.94";
+            this.vehicleExtendRichTxt.Location = new System.Drawing.Point(425, 165);
+            this.vehicleExtendRichTxt.Name = "vehicleExtendRichTxt";
+            this.vehicleExtendRichTxt.Size = new System.Drawing.Size(489, 254);
+            this.vehicleExtendRichTxt.TabIndex = 7;
+            this.vehicleExtendRichTxt.Text = "Mazda \n2\n2020\n$13.94";
+            this.vehicleExtendRichTxt.TextChanged += new System.EventHandler(this.vehicleExtendRichTxt_TextChanged);
             // 
-            // button2
+            // vehicleExtendExitBtn
             // 
-            this.button2.AccessibleName = "mainFormDeleteBtn";
-            this.button2.BackColor = System.Drawing.Color.Red;
-            this.button2.Location = new System.Drawing.Point(763, 375);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(121, 31);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Delete Entry";
-            this.button2.UseVisualStyleBackColor = false;
+            this.vehicleExtendExitBtn.AccessibleName = "mainFormDeleteBtn";
+            this.vehicleExtendExitBtn.BackColor = System.Drawing.Color.Red;
+            this.vehicleExtendExitBtn.Location = new System.Drawing.Point(763, 375);
+            this.vehicleExtendExitBtn.Name = "vehicleExtendExitBtn";
+            this.vehicleExtendExitBtn.Size = new System.Drawing.Size(121, 31);
+            this.vehicleExtendExitBtn.TabIndex = 8;
+            this.vehicleExtendExitBtn.Text = "Delete Entry";
+            this.vehicleExtendExitBtn.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -140,20 +131,29 @@ namespace SDV601_App
             this.label1.TabIndex = 9;
             this.label1.Text = "Welcome";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(108, 150);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(150, 17);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "List of current vehicles";
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1003, 521);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.listBox3);
-            this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.vehicleExtendExitBtn);
+            this.Controls.Add(this.vehicleExtendRichTxt);
+            this.Controls.Add(this.vehicleListBox3);
+            this.Controls.Add(this.vehicleListBox2);
+            this.Controls.Add(this.vehicleListBox1);
+            this.Controls.Add(this.cashFlowTxt);
+            this.Controls.Add(this.addEditBtn);
             this.Name = "mainForm";
             this.Text = "mainForm";
             this.Load += new System.EventHandler(this.mainForm_Load);
@@ -163,15 +163,15 @@ namespace SDV601_App
         }
 
         #endregion
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.ListBox listBox3;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button addEditBtn;
+        private System.Windows.Forms.TextBox cashFlowTxt;
+        private System.Windows.Forms.ListBox vehicleListBox1;
+        private System.Windows.Forms.ListBox vehicleListBox2;
+        private System.Windows.Forms.ListBox vehicleListBox3;
+        private System.Windows.Forms.RichTextBox vehicleExtendRichTxt;
+        private System.Windows.Forms.Button vehicleExtendExitBtn;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 
