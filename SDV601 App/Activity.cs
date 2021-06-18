@@ -14,5 +14,7 @@ namespace SDV601_App
 
         public DateTime activytDate { get; set; }
         public decimal Value { get; set; }
+        public DateTime CreatedDate { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string Name { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
     }
 }
