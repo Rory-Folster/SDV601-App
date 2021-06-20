@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace SDV601_App
 {
@@ -26,15 +27,20 @@ namespace SDV601_App
         private void button1_Click(object sender, EventArgs e)
         {
             Vehicle newVehicle = new Vehicle();
-            newVehicle._registration = addVehicleExtendMakeTxt.Text;
+            newVehicle._make = addVehicleExtendMakeTxt.Text;
             newVehicle._model = addVehicleExtendModelTxt.Text;
             newVehicle._year = addVehicleExtendYearTxt.TabIndex;
             newVehicle._hireCost = addVehicleExtendHireCostTxt.TabIndex;
 
-            listBox1.Items.Add(newVehicle._registration);
+            listBox1.Items.Add(newVehicle._make);
             listBox1.Items.Add(newVehicle._model);
             listBox1.Items.Add(newVehicle._year);
             listBox1.Items.Add(newVehicle._hireCost);
+
+            using (StreamWriter sw = new StreamWriter("myfile.txt"))
+            {
+                sw.WriteLine(newVehicle._make + Environment.NewLine + newVehicle._model + Environment.NewLine + newVehicle._year + Environment.NewLine + newVehicle._hireCost);
+            }
         }
     }
 }

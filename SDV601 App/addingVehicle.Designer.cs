@@ -41,13 +41,14 @@ namespace SDV601_App
             this.carRegoTxt.Name = "carRegoTxt";
             this.carRegoTxt.Size = new System.Drawing.Size(240, 22);
             this.carRegoTxt.TabIndex = 1;
+            this.carRegoTxt.TextChanged += new System.EventHandler(this.carRegoTxt_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(176, 194);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(199, 16);
+            this.label1.Size = new System.Drawing.Size(215, 17);
             this.label1.TabIndex = 3;
             this.label1.Text = "Please enter the car registration:";
             // 
@@ -57,7 +58,7 @@ namespace SDV601_App
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(300, 65);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(217, 25);
+            this.label2.Size = new System.Drawing.Size(280, 29);
             this.label2.TabIndex = 4;
             this.label2.Text = "Add/Edit a vehicle entry";
             // 

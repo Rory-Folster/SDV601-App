@@ -22,5 +22,10 @@ namespace SDV601_App
             addingVehicleExtend newAddingExtend = new addingVehicleExtend();
             newAddingExtend.Show();
         }
+
+        public void carRegoTxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

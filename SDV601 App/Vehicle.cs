@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace SDV601_App
 {
@@ -10,6 +11,8 @@ namespace SDV601_App
     public class Vehicle
     {
         public string Registration { get; set; }
+
+        public string Make { get; set; }
 
         public string Model { get; set; }
 
@@ -27,6 +30,12 @@ namespace SDV601_App
         {
             get { return Registration; }
             set { Registration = value; }
+        }
+
+        public string _make
+        {
+            get { return Make; }
+            set { Make = value; }
         }
 
         public string _model
