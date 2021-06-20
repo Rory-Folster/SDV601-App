@@ -1,4 +1,4 @@
-﻿using System;
+﻿/*using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -15,6 +15,17 @@ namespace SDV601_App
         private static Dictionary<string, Vehicle> _vehicles = new Dictionary<string, Vehicle>();
 
         public static Dictionary<string, Vehicle> Vehicles { get => _vehicles; }
+*/
+    /*    private static void Add(string strKey, string dataType {
+            if (_vehicles.ContainsKey(strKey))
+            {
+                _vehicles.Add(strKey, dataType);
+            }
+            else
+            {
+                _vehicles[strKey] = dataType;
+            }
+        }
 
         public static void Save()
         {
@@ -36,3 +47,4 @@ namespace SDV601_App
     }
 
 }
+*/

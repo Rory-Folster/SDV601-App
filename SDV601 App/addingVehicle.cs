@@ -16,5 +16,11 @@ namespace SDV601_App
         {
             InitializeComponent();
         }
+
+        private void submitCarRegoBtn_Click(object sender, EventArgs e)
+        {
+            addingVehicleExtend newAddingExtend = new addingVehicleExtend();
+            newAddingExtend.Show();
+        }
     }
 }

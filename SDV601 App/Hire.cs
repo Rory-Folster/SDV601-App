@@ -9,10 +9,10 @@ namespace SDV601_App
     [Serializable]
     public abstract class Hire : Activity
     {
-        public string hireCustName { get; set; }
-        public decimal hireCost { get; set; }
-        public DateTime hireStartDate { get; set; }
-        public DateTime hireEndDate { get; set; }
+        private string hireCustName { get; set; }
+        private decimal hireCost { get; set; }
+        private DateTime hireStartDate { get; set; }
+        private DateTime hireEndDate { get; set; }
 
         public void HireActivity ()
         {

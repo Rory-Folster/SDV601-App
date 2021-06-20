@@ -39,12 +39,13 @@ namespace SDV601_App
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // addVehicleExtendHireCostTxt
             // 
             this.addVehicleExtendHireCostTxt.AccessibleName = "addVehicleHireCostTxtBox";
-            this.addVehicleExtendHireCostTxt.Location = new System.Drawing.Point(360, 247);
+            this.addVehicleExtendHireCostTxt.Location = new System.Drawing.Point(228, 242);
             this.addVehicleExtendHireCostTxt.Name = "addVehicleExtendHireCostTxt";
             this.addVehicleExtendHireCostTxt.Size = new System.Drawing.Size(240, 22);
             this.addVehicleExtendHireCostTxt.TabIndex = 17;
@@ -53,7 +54,7 @@ namespace SDV601_App
             // addVehicleExtendModelTxt
             // 
             this.addVehicleExtendModelTxt.AccessibleName = "addVehicleModelTxtBox";
-            this.addVehicleExtendModelTxt.Location = new System.Drawing.Point(360, 149);
+            this.addVehicleExtendModelTxt.Location = new System.Drawing.Point(228, 144);
             this.addVehicleExtendModelTxt.Name = "addVehicleExtendModelTxt";
             this.addVehicleExtendModelTxt.Size = new System.Drawing.Size(240, 22);
             this.addVehicleExtendModelTxt.TabIndex = 14;
@@ -62,7 +63,7 @@ namespace SDV601_App
             // addVehicleExtendYearTxt
             // 
             this.addVehicleExtendYearTxt.AccessibleName = "addVehicleYearTxtBox";
-            this.addVehicleExtendYearTxt.Location = new System.Drawing.Point(360, 197);
+            this.addVehicleExtendYearTxt.Location = new System.Drawing.Point(228, 192);
             this.addVehicleExtendYearTxt.Name = "addVehicleExtendYearTxt";
             this.addVehicleExtendYearTxt.Size = new System.Drawing.Size(240, 22);
             this.addVehicleExtendYearTxt.TabIndex = 13;
@@ -71,7 +72,7 @@ namespace SDV601_App
             // addVehicleExtendMakeTxt
             // 
             this.addVehicleExtendMakeTxt.AccessibleName = "addVehicleMakeTxtBox";
-            this.addVehicleExtendMakeTxt.Location = new System.Drawing.Point(360, 102);
+            this.addVehicleExtendMakeTxt.Location = new System.Drawing.Point(228, 97);
             this.addVehicleExtendMakeTxt.Name = "addVehicleExtendMakeTxt";
             this.addVehicleExtendMakeTxt.Size = new System.Drawing.Size(240, 22);
             this.addVehicleExtendMakeTxt.TabIndex = 12;
@@ -80,46 +81,47 @@ namespace SDV601_App
             // button1
             // 
             this.button1.AccessibleName = "checkLogBtn";
-            this.button1.Location = new System.Drawing.Point(290, 314);
+            this.button1.Location = new System.Drawing.Point(217, 310);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(215, 83);
             this.button1.TabIndex = 19;
             this.button1.Text = "Check Vehicle Log";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(285, 107);
+            this.label1.Location = new System.Drawing.Point(153, 102);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 17);
+            this.label1.Size = new System.Drawing.Size(45, 16);
             this.label1.TabIndex = 20;
             this.label1.Text = "Make:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(257, 250);
+            this.label2.Location = new System.Drawing.Point(125, 245);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 17);
+            this.label2.Size = new System.Drawing.Size(66, 16);
             this.label2.TabIndex = 21;
             this.label2.Text = "Hire Cost:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(285, 197);
+            this.label3.Location = new System.Drawing.Point(153, 192);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 17);
+            this.label3.Size = new System.Drawing.Size(40, 16);
             this.label3.TabIndex = 22;
             this.label3.Text = "Year:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(281, 152);
+            this.label4.Location = new System.Drawing.Point(149, 147);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 17);
+            this.label4.Size = new System.Drawing.Size(49, 16);
             this.label4.TabIndex = 23;
             this.label4.Text = "Model:";
             // 
@@ -127,17 +129,27 @@ namespace SDV601_App
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(57, 31);
+            this.label5.Location = new System.Drawing.Point(115, 33);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(687, 26);
+            this.label5.Size = new System.Drawing.Size(568, 22);
             this.label5.TabIndex = 24;
             this.label5.Text = "Please enter the remaining details to add the Vehicle to our Database.";
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 16;
+            this.listBox1.Location = new System.Drawing.Point(546, 113);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(182, 164);
+            this.listBox1.TabIndex = 25;
             // 
             // addingVehicleExtend
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(951, 457);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -167,5 +179,6 @@ namespace SDV601_App
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
