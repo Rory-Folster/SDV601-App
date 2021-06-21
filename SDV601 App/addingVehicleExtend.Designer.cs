@@ -45,45 +45,46 @@ namespace SDV601_App
             // addVehicleExtendHireCostTxt
             // 
             this.addVehicleExtendHireCostTxt.AccessibleName = "addVehicleHireCostTxtBox";
-            this.addVehicleExtendHireCostTxt.Location = new System.Drawing.Point(228, 242);
+            this.addVehicleExtendHireCostTxt.Location = new System.Drawing.Point(171, 197);
+            this.addVehicleExtendHireCostTxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.addVehicleExtendHireCostTxt.Name = "addVehicleExtendHireCostTxt";
-            this.addVehicleExtendHireCostTxt.Size = new System.Drawing.Size(240, 22);
+            this.addVehicleExtendHireCostTxt.Size = new System.Drawing.Size(181, 20);
             this.addVehicleExtendHireCostTxt.TabIndex = 17;
-            this.addVehicleExtendHireCostTxt.Text = "$20.00";
             // 
             // addVehicleExtendModelTxt
             // 
             this.addVehicleExtendModelTxt.AccessibleName = "addVehicleModelTxtBox";
-            this.addVehicleExtendModelTxt.Location = new System.Drawing.Point(228, 144);
+            this.addVehicleExtendModelTxt.Location = new System.Drawing.Point(171, 117);
+            this.addVehicleExtendModelTxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.addVehicleExtendModelTxt.Name = "addVehicleExtendModelTxt";
-            this.addVehicleExtendModelTxt.Size = new System.Drawing.Size(240, 22);
+            this.addVehicleExtendModelTxt.Size = new System.Drawing.Size(181, 20);
             this.addVehicleExtendModelTxt.TabIndex = 14;
-            this.addVehicleExtendModelTxt.Text = "Ranger";
             // 
             // addVehicleExtendYearTxt
             // 
             this.addVehicleExtendYearTxt.AccessibleName = "addVehicleYearTxtBox";
-            this.addVehicleExtendYearTxt.Location = new System.Drawing.Point(228, 192);
+            this.addVehicleExtendYearTxt.Location = new System.Drawing.Point(171, 156);
+            this.addVehicleExtendYearTxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.addVehicleExtendYearTxt.Name = "addVehicleExtendYearTxt";
-            this.addVehicleExtendYearTxt.Size = new System.Drawing.Size(240, 22);
+            this.addVehicleExtendYearTxt.Size = new System.Drawing.Size(181, 20);
             this.addVehicleExtendYearTxt.TabIndex = 13;
-            this.addVehicleExtendYearTxt.Text = "2018";
             // 
             // addVehicleExtendMakeTxt
             // 
             this.addVehicleExtendMakeTxt.AccessibleName = "addVehicleMakeTxtBox";
-            this.addVehicleExtendMakeTxt.Location = new System.Drawing.Point(228, 97);
+            this.addVehicleExtendMakeTxt.Location = new System.Drawing.Point(171, 79);
+            this.addVehicleExtendMakeTxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.addVehicleExtendMakeTxt.Name = "addVehicleExtendMakeTxt";
-            this.addVehicleExtendMakeTxt.Size = new System.Drawing.Size(240, 22);
+            this.addVehicleExtendMakeTxt.Size = new System.Drawing.Size(181, 20);
             this.addVehicleExtendMakeTxt.TabIndex = 12;
-            this.addVehicleExtendMakeTxt.Text = "Ford";
             // 
             // button1
             // 
             this.button1.AccessibleName = "checkLogBtn";
-            this.button1.Location = new System.Drawing.Point(217, 310);
+            this.button1.Location = new System.Drawing.Point(163, 252);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(215, 83);
+            this.button1.Size = new System.Drawing.Size(161, 67);
             this.button1.TabIndex = 19;
             this.button1.Text = "Check Vehicle Log";
             this.button1.UseVisualStyleBackColor = true;
@@ -92,36 +93,40 @@ namespace SDV601_App
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(153, 102);
+            this.label1.Location = new System.Drawing.Point(115, 83);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 17);
+            this.label1.Size = new System.Drawing.Size(37, 13);
             this.label1.TabIndex = 20;
             this.label1.Text = "Make:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(125, 245);
+            this.label2.Location = new System.Drawing.Point(94, 199);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 17);
+            this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 21;
             this.label2.Text = "Hire Cost:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(153, 192);
+            this.label3.Location = new System.Drawing.Point(115, 156);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 17);
+            this.label3.Size = new System.Drawing.Size(32, 13);
             this.label3.TabIndex = 22;
             this.label3.Text = "Year:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(149, 147);
+            this.label4.Location = new System.Drawing.Point(112, 119);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 17);
+            this.label4.Size = new System.Drawing.Size(39, 13);
             this.label4.TabIndex = 23;
             this.label4.Text = "Model:";
             // 
@@ -129,26 +134,28 @@ namespace SDV601_App
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(115, 33);
+            this.label5.Location = new System.Drawing.Point(86, 27);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(687, 26);
+            this.label5.Size = new System.Drawing.Size(568, 22);
             this.label5.TabIndex = 24;
             this.label5.Text = "Please enter the remaining details to add the Vehicle to our Database.";
             // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(546, 113);
+            this.listBox1.Location = new System.Drawing.Point(410, 92);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listBox1.MultiColumn = true;
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(312, 228);
+            this.listBox1.Size = new System.Drawing.Size(235, 186);
             this.listBox1.TabIndex = 25;
             // 
             // addingVehicleExtend
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(951, 457);
+            this.ClientSize = new System.Drawing.Size(736, 380);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -160,6 +167,7 @@ namespace SDV601_App
             this.Controls.Add(this.addVehicleExtendModelTxt);
             this.Controls.Add(this.addVehicleExtendYearTxt);
             this.Controls.Add(this.addVehicleExtendMakeTxt);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "addingVehicleExtend";
             this.Text = "addingVehicleExtend";
             this.Load += new System.EventHandler(this.addingVehicleExtend_Load);

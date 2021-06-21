@@ -32,15 +32,18 @@ namespace SDV601_App
             newVehicle._year = addVehicleExtendYearTxt.TabIndex;
             newVehicle._hireCost = addVehicleExtendHireCostTxt.TabIndex;
 
+            using (StreamWriter sw = new StreamWriter("myfile.txt"))
+            {
+                sw.WriteLine(newVehicle._make + Environment.NewLine + newVehicle._model + Environment.NewLine + newVehicle._year + Environment.NewLine + newVehicle._hireCost);
+                sw.Close();
+            }
+
             listBox1.Items.Add(newVehicle._make);
             listBox1.Items.Add(newVehicle._model);
             listBox1.Items.Add(newVehicle._year);
             listBox1.Items.Add(newVehicle._hireCost);
 
-            using (StreamWriter sw = new StreamWriter("myfile.txt"))
-            {
-                sw.WriteLine(newVehicle._make + Environment.NewLine + newVehicle._model + Environment.NewLine + newVehicle._year + Environment.NewLine + newVehicle._hireCost);
-            }
+
         }
     }
 }
