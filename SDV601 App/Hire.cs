@@ -1,35 +1,32 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace SDV601_App 
 {
     [Serializable]
-    public abstract class Hire : Activity
+    public class Hire : Activity //creating Hire sub class inheriting from Activity class
     {
-        private string hireCustName { get; set; }
-        private decimal hireCost { get; set; }
-        private DateTime hireStartDate { get; set; }
-        private DateTime hireEndDate { get; set; }
 
-        public void HireActivity ()
+        private string _hireCustName { get; set; } //creating Hire properties
+        private float _hireCost { get; set; }
+
+        private DateTime _hireStartDate = DateTime.Today;
+
+        private DateTime _hireEndDate = DateTime.Today;
+
+        public string HireCustName { get => _hireCustName; set => _hireCustName = value; } //initilizing proprties
+
+        public float HireCost { get => _hireCost; set => _hireCost = value; }
+       
+        public DateTime HireStartDate { get => _hireStartDate; set => _hireStartDate = value; }
+
+
+        public DateTime HireEndDate { get => _hireEndDate; set => _hireEndDate = value; }
+
+        public override string ToString()
         {
-            hireCustName = "Please enter a name";
-            hireCost = 0.00M;
-            hireStartDate = DateTime.Today;
-            hireEndDate = DateTime.Today;
+            return _hireCustName + "\n" + _hireCost + "\n" + _hireStartDate + '\n' + _hireEndDate; //overriding string, including all Hire properties that can be used later to store in a list
         }
 
-        public void HireActivity(string _hireCustName, decimal _hireCost, DateTime _hireStartDate, DateTime _hireEndDate)
-        {
-            hireCustName = _hireCustName;
-            hireCost = _hireCost;
-            hireStartDate = _hireStartDate;
-            hireEndDate = _hireEndDate;
-        }
     }
-
-
 }

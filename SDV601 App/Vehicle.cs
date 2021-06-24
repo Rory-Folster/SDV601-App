@@ -1,58 +1,43 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.IO;
 
 namespace SDV601_App
 {
     [Serializable]
     public class Vehicle
+
     {
-        public string Registration { get; set; }
 
-        public string Make { get; set; }
+        public string _registration { get; set; } //create properties 
 
-        public string Model { get; set; }
+        public string _make { get; set; }
 
-        public int Year { get; set; }
+        public string _model { get; set; }
 
-        public decimal HireCost { get; set; }
+        public int _year { get; set; }
 
-        public DateTime CreatedDate { get; set; }
+        public decimal _hireCost { get; set; }
 
-        public  List<IActivity> _activities = new List<IActivity>();
+        public DateTime _createdDate = DateTime.Now;
 
-        public  IList<IActivity> Activities { get => _activities; }
 
-        public string _registration
+        public override string ToString()
         {
-            get { return Registration; }
-            set { Registration = value; }
+            return _registration + "\n" + _make + "\n" + _model + '\n' + _year + "\n" + _hireCost + "\n" + _createdDate; //creating a return string that will display all property input data
         }
 
-        public string _make
-        {
-            get { return Make; }
-            set { Make = value; }
-        }
+        public string Registration { get => _registration; set => _registration = value; } //initializing properties 
 
-        public string _model
-        {
-            get { return Model; }
-            set { Model = value; }
-        }
+        public string Make { get => _make; set => _make = value; }
 
-        public int _year
-        {
-            get { return Year; }
-            set { Year = value; }
-        }
-        public decimal _hireCost
-        {
-            get { return 0.00M; }
-            set { HireCost = value; }
-        }
+
+        public string Model { get => _model; set => _model = value; }
+
+        public int Year { get => _year; set => _year = value; }
+
+        public decimal HireCost { get => _hireCost; set => _hireCost = value; }
+
+
+        public DateTime CreatedDate { get => _createdDate; set => _createdDate = value; }
+
     }
 }

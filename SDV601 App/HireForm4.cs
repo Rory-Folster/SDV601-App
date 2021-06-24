@@ -3,16 +3,14 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SDV601_App
 {
-    public partial class addLog : Form
+    public partial class HireForm4 : SDV601_App.addingVehicleExtend
     {
-        public addLog()
+        public HireForm4()
         {
             InitializeComponent();
         }

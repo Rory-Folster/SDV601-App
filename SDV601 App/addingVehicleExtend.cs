@@ -1,22 +1,35 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO;
+
 
 namespace SDV601_App
 {
     public partial class addingVehicleExtend : Form
     {
+        private Vehicle _vehicle = new Vehicle();
 
         public addingVehicleExtend()
         {
             InitializeComponent();
+        }
+
+        public DialogResult ShowDialog(Vehicle vehicle)
+        {
+            _vehicle = vehicle;
+            UpdateDisplay();
+            return ShowDialog();
+        }
+
+        private void UpdateDisplay()
+        {
+            addVehicleExtendRegoTxt.Text = _vehicle.Registration; //creating method called UpdateDisplay that connects the user inputs to 
+            addVehicleExtendMakeTxt.Text = _vehicle.Make;         //Properties set in Vehicle class, allowing them to be used later in the code for saving etc.
+            addVehicleExtendModelTxt.Text = _vehicle.Model;
+            addVehicleExtendYearTxt.Text = Convert.ToString(_vehicle.Year);
+            addVehicleExtendHireCostTxt.Text = Convert.ToString(_vehicle.HireCost);
+            addVehicleEntryDate.Value = _vehicle._createdDate;
+            addVehicleExtendMakeTxt.Enabled = String.IsNullOrEmpty(_vehicle.Registration);
+
         }
 
         private void addingVehicleExtend_Load(object sender, EventArgs e)
@@ -26,24 +39,26 @@ namespace SDV601_App
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Vehicle newVehicle = new Vehicle();
-            newVehicle._make = addVehicleExtendMakeTxt.Text;
-            newVehicle._model = addVehicleExtendModelTxt.Text;
-            newVehicle._year = addVehicleExtendYearTxt.TabIndex;
-            newVehicle._hireCost = addVehicleExtendHireCostTxt.TabIndex;
-
-            using (StreamWriter sw = new StreamWriter("myfile.txt"))
-            {
-                sw.WriteLine(newVehicle._make + Environment.NewLine + newVehicle._model + Environment.NewLine + newVehicle._year + Environment.NewLine + newVehicle._hireCost);
-                sw.Close();
-            }
-
-            listBox1.Items.Add(newVehicle._make);
-            listBox1.Items.Add(newVehicle._model);
-            listBox1.Items.Add(newVehicle._year);
-            listBox1.Items.Add(newVehicle._hireCost);
+            _vehicle.Registration = addVehicleExtendRegoTxt.Text; //creating an onclick event that sends the data to Vehicle when the button is pressed by user
+            _vehicle.Make = addVehicleExtendMakeTxt.Text;
+            _vehicle.Model = addVehicleExtendModelTxt.Text;
+            _vehicle.Year = Convert.ToInt32(addVehicleExtendYearTxt.Text);
+            _vehicle.HireCost = Convert.ToDecimal(addVehicleExtendHireCostTxt.Text); 
+            _vehicle._createdDate = addVehicleEntryDate.Value;
+            DialogResult = DialogResult.OK;
+            this.Close();
+        }
 
 
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
