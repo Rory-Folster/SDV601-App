@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.IO;
 
 namespace SDV601_App
 {
@@ -53,8 +54,8 @@ namespace SDV601_App
                 addingVehicleExtend _newVehicleExtend = new addingVehicleExtend();
                 _newVehicleExtend.ShowDialog();
             }
-            if (activityType.SelectedIndex == 1)
-            {
+            if (activityType.SelectedIndex == 1) // Because _activityType was set up as an array and has 4 parameters, you can select the correct response based on the user input by uing an if/else
+            {                                    //statement to check the index of the listbox.
                 _addingVehicleExtend = _hireForm;
             }
             else if (activityType.SelectedIndex == 2)
@@ -111,6 +112,14 @@ namespace SDV601_App
         {
             string message = "Entry has been selected";
             MessageBox.Show(message);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (openFileDialog1.ShowDialog() == DialogResult.OK) /* Creating a way to read from text file. tried to use my serilize class "Fleet" but was met with an error; 'The process cannot access the file 'C:\Users\envoh\Desktop\2021\SDV\Assessments\Assessment 2 - Project\SDV601 App\SDV601 App\bin\Debug\fleet.dat' because it is being used by another process.'*/
+            {
+                vehicleExtendSmallRichTxt1.Text = File.ReadAllText(openFileDialog1.FileName);
+            }
         }
     }
 }

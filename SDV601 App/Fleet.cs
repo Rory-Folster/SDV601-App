@@ -1,4 +1,4 @@
-﻿using System;
+﻿/*using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace SDV601_App //Class that was created to serilize the application.
 {
-/*    public static class Fleet  
+    public static class Fleet
     {
-        private static string fileName = "fleet.dat"; //initializing a file to be saved to, by default location is in \bin.
+        private static string fileName = "fleet1.dat"; //initializing a file to be saved to, by default location is in \bin.
 
         private static List<Vehicle> _vehicles = new List<Vehicle>(); //creating a list that will contain entries 
 
@@ -29,9 +29,18 @@ namespace SDV601_App //Class that was created to serilize the application.
         {
             using (FileStream fileStream = new FileStream(fileName, FileMode.OpenOrCreate))
             {
-                BinaryFormatter formatter = new BinaryFormatter();
-                _vehicles = (List<Vehicle>)formatter.Deserialize(fileStream);
+                if (fileStream.Length == 0)
+                {
+                    Save();
+                }
+                else
+                {
+                    BinaryFormatter formatter = new BinaryFormatter();
+                    _vehicles = (List<Vehicle>)formatter.Deserialize(fileStream);
+                }
             }
-       */ 
 
+        }
+    }
 }
+*/

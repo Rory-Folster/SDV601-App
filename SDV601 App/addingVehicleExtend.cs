@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.IO;
 
 
 namespace SDV601_App
@@ -46,7 +47,14 @@ namespace SDV601_App
             _vehicle.HireCost = Convert.ToDecimal(addVehicleExtendHireCostTxt.Text); 
             _vehicle._createdDate = addVehicleEntryDate.Value;
             DialogResult = DialogResult.OK;
-            this.Close();
+            TextWriter txt = new StreamWriter("C:\\Users\\envoh\\Desktop\\vehicle.txt");
+            txt.Write("Vehicle:" + "\n" + addVehicleExtendRegoTxt.Text + "\n");
+            txt.Write(addVehicleExtendMakeTxt.Text + "\n");
+            txt.Write(addVehicleExtendModelTxt.Text + "\n");
+            txt.Write(addVehicleExtendYearTxt.Text + "\n");
+            txt.Write(addVehicleExtendHireCostTxt.Text);
+            txt.Close();
+
         }
 
 
